@@ -1,11 +1,10 @@
 #include <stdio.h>
 int main() {
-    int w;
-    printf("karpuz kilosu giriniz:");
-    scanf("%d",&w);
-    if(w%2||w==2||w==0||w<0)
-    printf("hayir");
-    else
-    printf("evet");
+int w;
+scanf("%d",&w);
+if(w>2&w<=100&w%2==0)
+    printf("YES");
+else
+printf("NO");
     return 0;
 }
