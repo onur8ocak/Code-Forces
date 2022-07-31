@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+int n,s,a,d,toplam=0;
+scanf("%d",&n);
+while(n--){
+scanf("%d",&s);
+scanf("%d",&a);
+scanf("%d",&d);
+if(s+a+d>=2)
+toplam++;
+}
+printf("%d",toplam);
+return 0;
+}
