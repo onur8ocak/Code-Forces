@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+int k,n,w,t;
+scanf("%d %d %d",&k,&n,&w);
+t=k*(w*(w+1)/2);
+if(t<n)
+printf("0");
+else
+printf("%d",t-n);
+    return 0;
+}
