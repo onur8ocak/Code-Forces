@@ -1,0 +1,43 @@
+#include <stdio.h>
+int main() {
+int toplam=0,sayac=0,sayi=0,notlar[10000],max,min,a=0;
+
+while(1){
+
+printf("not giriniz:");
+scanf("%d",&notlar[sayac]);
+
+if(notlar[sayac]<0){
+break;
+}
+else{
+toplam+=notlar[sayac];
+sayac++;
+}   
+
+    
+}
+max=notlar[0];
+min=notlar[0];
+for(sayi;sayi<sayac;sayi++){
+    if(sayac==1)
+    break;
+    else if(max>notlar[sayi+1])
+    continue;
+    else
+    max=notlar[sayi+1];
+}
+for(sayi=0;sayi<sayac-1;sayi++){
+    if(sayac==1)
+    break;
+    else if(min<notlar[sayi+1])
+    continue;
+    else
+    min=notlar[sayi+1];
+} 
+ printf("girdiginiz notlarin en yuksegi:%d",max);
+ printf("\ngirdiginiz notlarin en dusugu:%d",min);
+ printf("\ngirdiginiz notlarin ortalamasi:%d",toplam/sayac);
+ 
+    return 0;
+}
