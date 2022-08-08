@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main() {
+int n,k,p,b,s=0,t=0;
+scanf("%d",&n);
+scanf("%d",&k);
+int a[n];
+b=n;
+while(n--){
+scanf("%d",&a[s]);
+s++;
+}
+p=a[k-1];
+
+for(s=0;s<b;s++){
+    if(a[s]!=0&&a[s]>=p)
+    t++;
+    else
+    continue;
+}
+printf("%d",t);
+
+    return 0;
+}
