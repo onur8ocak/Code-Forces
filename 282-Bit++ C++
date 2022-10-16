@@ -1,0 +1,22 @@
+// Onur
+// Code Forces 282A
+// c++
+#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+using namespace std;
+string a;
+int i,x=0,t;
+int main() {
+    cin>>t;
+    while(t--)
+    {
+        cin>>a;
+        if(a[1]=='+')
+        x++;
+        else
+        x--;
+    }
+    cout<<x;
+    return 0;
+}
