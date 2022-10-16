@@ -1,0 +1,26 @@
+//Onur-Code forces 116A Tram
+//c programming language
+#include <stdio.h>
+int main(){
+	int binen[1005],inen[1005],yolcu[1005],n,i,mx;
+	scanf("%d",&n);
+	for(i=0;i<n;i++){
+	scanf("%d",&inen[i]);
+	scanf("%d",&binen[i]);
+}
+yolcu[0]=binen[0];
+mx=yolcu[0];
+ 
+ for(i=1;i<n;i++){
+	 yolcu[i]=yolcu[i-1]+binen[i]-inen[i];
+	 }
+  
+    for(i=1;i<n;i++)
+    {
+        if(mx<yolcu[i])
+        mx=yolcu[i];
+        else
+        continue;
+    }
+	printf("%d",mx);
+	}
