@@ -1,0 +1,19 @@
+//Onur-Code forces 116A Tram
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+	int binen[1005],inen[1005],yolcu[1005],n,i;
+	cin >> n;
+	for(i=0;i<n;i++){
+	cin >> inen[i];
+	cin >> binen [i];
+}
+yolcu[0]=binen[0];
+ 
+ for(i=1;i<n;i++){
+	 yolcu[i]=yolcu[i-1]+binen[i]-inen[i];
+	 }
+  
+sort(yolcu,yolcu+n);
+	printf("%d",yolcu[n-1]);
+	}
