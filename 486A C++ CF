@@ -1,0 +1,21 @@
+//Onur
+//486A CF
+#include <bits/stdc++.h>
+#include <vector>
+#define assign as
+typedef long long ll;
+typedef int i;
+using namespace std;
+vector<i> p;
+vector<i> q;
+ll a;
+int main(){
+    cin>>a;
+    if(a%2==0)
+    {
+        cout<<a/2;
+        return 0;
+    }
+    cout<<a/2-a;
+    return 0;
+}
