@@ -1,0 +1,26 @@
+//Onur
+//236A CF
+#include <bits/stdc++.h>
+#include <vector>
+using namespace std;
+typedef long long ll;
+typedef vector<int> vi;
+typedef tuple<int,int,int> iii;
+typedef vector<iii> viii;
+const int INF = 1e9+7;
+int i,n,a=0;
+string str;
+int main() {
+    cin>>str;
+    sort(str.begin(), str.end());
+    n=str.size();
+
+    for(i=1;i<n;i++)
+    {
+        if(str[i]!=str[i-1]) a++;
+        else continue;
+    }
+    if((a+1)%2==0) cout<<"CHAT WITH HER!";
+    else cout<<"IGNORE HIM!";
+    return 0;
+}
