@@ -1,0 +1,23 @@
+//Onur
+//266A CF
+#include <bits/stdc++.h>
+#include <vector>
+using namespace std;
+typedef long long ll;
+typedef vector<int> vi;
+typedef tuple<int,int,int> iii;
+typedef vector<iii> viii;
+const int INF = 1e9+7;
+int i=0,n,a=0;
+string str;
+int main() {
+    cin>>n;
+    cin>>str;
+    for(i=0;i<n-1;i++)
+    {
+        if(str[i]==str[i+1]) 
+        a++;
+    }
+    cout<<a;
+    return 0;
+}
