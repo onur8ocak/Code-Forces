@@ -1,0 +1,49 @@
+// Clion
+// C++
+// 29/10/2022 10.15
+// Onur
+// CF
+// 510A
+#include <bits/stdc++.h>
+#include <vector>
+#include <algorithm>
+using namespace std;
+#define INF -10000007
+typedef float flo;
+typedef long long ll;
+typedef tuple<int,int,int> tiii;
+typedef vector<int> vi;
+vi v;
+const int MOD=1e+7;
+ll r,c,i,j,m;
+int main() {
+    cin>>r>>c;
+    for(i=0;i<r;i++)
+    {
+        if(i%2==0)
+        {
+            for(m=0;m<c;m++)
+            cout<<"#";
+            cout<<endl;
+        }
+        else
+        {
+            if(i%4==1)
+            {
+                for(j=0;j<c-1;j++)
+                cout<<".";
+                cout<<"#"<<endl;
+            }
+            else
+            {
+                cout<<"#";
+                for(j=0;j<c-1;j++)
+                cout<<".";
+                cout<<endl;
+            }
+            
+        }
+        
+    }
+    return 0;
+}
