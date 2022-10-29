@@ -1,0 +1,29 @@
+// Clion
+// C++
+// 29/10/2022 10.11
+// Onur
+// CF
+// 1154A
+#include <bits/stdc++.h>
+#include <vector>
+#include <algorithm>
+using namespace std;
+#define INF -10000007
+typedef float flo;
+typedef int i;
+typedef long long ll;
+typedef tuple<int,int,int> tiii;
+typedef vector<int> vi;
+vi v;
+const int MOD=1e+7;
+ll mx,j=4,a;
+int main() {
+    while(j--)
+    {
+        cin>>a;
+        v.push_back(a);
+    }
+    sort(v.begin(),v.end());
+    cout<<v[3]-v[0]<<" "<<v[3]-v[1]<<" "<<v[3]-v[2];
+    return 0;
+}
