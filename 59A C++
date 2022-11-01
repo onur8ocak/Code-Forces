@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string s;
+    int i,n,buyuk=0,kucuk=0;
+    cin>>s;
+    n=s.size();
+    for(i=0;i<n;i++)
+    {
+        if(s[i]>95)
+        kucuk++;
+        else
+        buyuk++;
+    }
+    if(buyuk>kucuk)
+    {
+        for(i=0;i<n;i++)
+        {
+            if(s[i]>95)
+            s[i]-=32;
+        }
+    }
+    else
+    {
+        for(i=0;i<n;i++)
+        {
+            if(s[i]<95)
+            s[i]+=32;
+        }
+    }
+    cout<<s;
+    return 0;
+}
