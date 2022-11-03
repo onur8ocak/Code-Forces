@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string a;
+    int i,n,ant=0,dan=0;
+    cin>>n;
+    cin>>a;
+    for(i=0;i<n;i++)
+    {
+        if(a[i]=='A')
+        ant++;
+        else
+        dan++;
+    }
+    if(ant>dan)
+    cout<<"Anton";
+    else if(dan>ant)
+    cout<<"Danik";
+    else
+    cout<<"Friendship";
+    return 0;
+}
