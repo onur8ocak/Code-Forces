@@ -1,0 +1,47 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int t,n,n2;
+  string a,b;
+    scanf("%d",&t);
+    while(t--)
+    {
+        cin>>a>>b;
+        n=a.size();
+        n2=b.size();
+        if(a==b)
+        {
+            printf("=\n");
+            continue;
+        }
+        if(a[n-1]!=b[n2-1])
+        {
+            if(a[n-1]=='L')
+            printf(">\n");
+            else if(a[n-1]=='S')
+            printf("<\n");
+            else if(b[n2-1]=='L')
+            printf("<\n");
+            else
+            printf(">\n");
+        }
+        else if(a[n-1]=='L')
+        {
+            if(n>n2)
+            printf(">\n");
+            else
+            printf("<\n");
+        }
+        else
+        {
+            if(n>n2)
+            printf("<\n");
+            else
+            printf(">\n");
+        }
+        
+    }
+ 
+    return 0;
+}
