@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+int t,n,i;
+int main() {
+   cin>>t;
+   while(t--)
+   {
+       cin>>n;
+       if(n==3)
+       {
+           cout<<"-1"<<endl;
+           continue;
+       }
+       cout<<n<<" "<<n-1<<" ";
+        
+       for(i=1;i<n-1;i++)
+       {
+           cout<<i<<" ";
+       }
+       cout<<"\n";
+   }
+   
+ 
+    return 0;
+}
