@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t,a,b,sonuc; 
+    cin>>t;
+    while(t--)
+    {
+        cin>>a>>b;
+        if(a==b)
+        {
+            cout<<0<<endl;
+            continue;      
+        }
+        if(a>b)
+        sonuc=a-b;
+        else
+        sonuc=b-a;
+        int c=0;
+        if(a%b==0)
+        cout<<sonuc/10<<endl;
+        else
+        cout<<sonuc/10+1<<endl;
+    }
+    return 0;
+}
