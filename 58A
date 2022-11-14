@@ -1,0 +1,47 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    string a;
+    int i,sz,h=-1,e=-1,l1=-1,l2=-1,o=-1;
+    cin>>a; sz=a.size();
+    for(i=0;i<sz;i++)
+    {
+        if(a[i]=='h'){
+        h=i;
+        break;
+        }
+    }
+    for(i=h;i<sz;i++)
+    {
+        if(a[i]=='e'){
+        e=i;
+        break;
+        }
+    }
+    for(i=e;i<sz;i++)
+    {
+        if(a[i]=='l'){
+        l1=i;
+        break;
+        }
+    }
+    for(i=l1+1;i<sz;i++)
+    {
+        if(a[i]=='l'){
+        l2=i;
+        break;
+        }
+    }
+    for(i=l2;i<sz;i++)
+    {
+        if(a[i]=='o'){
+        o=i;
+        break;
+        }
+    }
+    if(h==-1||e==-1||l1==-1||l2==-1||o==-1)
+    cout<<"NO";
+    else
+    cout<<"YES";
+    return 0;
+}
