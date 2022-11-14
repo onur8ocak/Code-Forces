@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    bool f=false;
+    string str;
+    int n,let=65;
+    cin>>n;
+    cin>>strt
+    if(n<26) { cout<<"NO"; return 0; } // - > Best Case
+    for(int let=65;let<91;let++)
+    {
+        f=false;
+        for(int i=0;i<n;i++)
+        {
+            if(str[i]==let||str[i]==let+32) { f=true; break; }
+            else continue;
+        }
+        if(f) continue;
+        else { cout<<"NO"; return 0; }
+    }
+    cout<<"YES";
+    return 0;
+}
