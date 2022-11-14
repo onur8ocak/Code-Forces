@@ -1,0 +1,64 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main ()
+{
+    int cnt1,cnt2,cnt3,n1,n2,n3,tut1=0,tut2=0,tut3=0;
+    string s1,s2,s3;
+    cin>>s1;
+    cin>>s2;
+    cin>>s3;
+    sort(s1.begin(),s1.end());
+    sort(s2.begin(),s2.end());
+    sort(s3.begin(),s3.end());
+    n1=s1.size();
+    n2=s2.size();
+    n3=s3.size();
+    if(n1+n2<n3)
+    {
+        cout<<"NO";
+        return 0;
+    }
+    for(int i=65;i<91;i++)
+    {
+        cnt1=0;
+        cnt2=0;
+        cnt3=0;
+        for(int a=tut1;a<n1;a++)
+        {
+            if(s1[a]==i)
+            cnt1++;
+            else
+            {
+                tut1=a;
+                break;
+            }
+        }
+        for(int a=tut2;a<n2;a++)
+        {
+            if(s2[a]==i)
+            cnt2++;
+            else
+            {
+                tut2=a;
+                break;
+            }
+        }
+        for(int a=tut3;a<n3;a++)
+        {
+            if(s3[a]==i)
+            cnt3++;
+            else
+            {
+                tut3=a;
+                break;
+            }
+        }
+        if(cnt1+cnt2!=cnt3)
+        {
+            cout<<"NO";
+            return 0;
+        }
+    }
+    cout<<"YES";
+    return 0;
+}
