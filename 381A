@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main() {
+    int n,arr[1001],b=0,tut,s=0,d=0;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    cin>>arr[i];
+    tut=n;
+    n--;
+    for(int i=0;i<tut;i++)
+    {
+        if(i%2==0){
+        if(arr[b]>=arr[n]) s+=arr[b++];
+        else s+=arr[n--];
+        }
+        if(i%2==1){
+        if(arr[b]>=arr[n]) d+=arr[b++];
+        else d+=arr[n--];
+        }
+    }
+    cout<<s<<" "<<d;
+    return 0;
+}
