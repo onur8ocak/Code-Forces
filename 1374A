@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int x,y,n,t,k,mod,fark;
+    cin>>t;
+    while(t--)
+    {
+        cin>>x>>y>>n;
+        mod=n%x;
+        if(y>mod)
+        fark=mod+x-y;
+        else
+        fark=mod-y;
+        cout<<n-fark<<endl;
+    }
+    return 0;
+}
