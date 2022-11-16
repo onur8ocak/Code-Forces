@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int arr[5],cal=0,n;
+    string str;
+    for(int i=0;i<4;i++)
+    cin>>arr[i];
+    cin>>str; n=str.size();
+    for(int i=0;i<n;i++)
+    {
+        if(str[i]=='1')
+        cal+=arr[0];
+        if(str[i]=='2')
+        cal+=arr[1];
+        if(str[i]=='3')
+        cal+=arr[2];
+        if(str[i]=='4')
+        cal+=arr[3];
+    }
+    cout<<cal;
+    return 0;
+}
