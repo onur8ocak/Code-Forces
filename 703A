@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int m,c,ctr1=0,ctr2=0,t;
+    cin>>t;
+    while(t--)
+    {
+        cin>>m>>c;
+        if(m>c) ctr1++;
+        if(c>m) ctr2++;
+    }
+    if(c>m) cout<<"Chris";
+    if(m>c) cout<<"Mishka";
+    if(c==m) cout<<"Friendship is magic!^^";
+    return 0;
+}
