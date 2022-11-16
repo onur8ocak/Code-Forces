@@ -1,0 +1,17 @@
+
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int a[5],ti,t;
+    cin>>t;
+    while(t--)
+    {
+        cin>>a[0]>>a[1]>>a[2]>>a[3];
+        ti=a[0];
+        sort(a,a+4);
+        for(int i=0;i<4;i++)
+        if(ti==a[i])
+        cout<<4-i-1<<endl;
+    }
+    return 0;
+}
