@@ -1,0 +1,30 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    bool f=false;
+    int d[5],t,tut[5],max1,max2;
+    cin>>t;
+    while(t--)
+    {
+        f=false;
+        for(int i=0;i<4;i++){
+        cin>>d[i];
+        tut[i]=d[i];
+        }
+        sort(tut,tut+4);
+        max1=tut[3];
+        max2=tut[2];
+        for(int i=0;i<4;i+=2)
+        {
+            if((max1==d[i]&&max2==d[i+1])||(max1==d[i+1]&&max2==d[i]))
+            {
+                cout<<"NO";
+                f=true;
+                break;
+            }
+        }
+        if(f==false)
+        cout<<"YES"<<endl;
+    }
+    return 0;
+}
