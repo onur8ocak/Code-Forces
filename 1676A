@@ -1,0 +1,17 @@
+include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int t,b[7];
+    string ti;
+    cin>>t;
+    while(t--)
+    {
+        cin>>ti;
+        if((int) ti[0]+ti[1]+ti[2]==(int) ti[3]+ti[4]+ti[5])
+        cout<<"YES"<<endl;
+        else
+        cout<<"NO"<<endl;
+    }
+        
+    return 0;
+}
