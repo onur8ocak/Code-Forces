@@ -1,0 +1,38 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main() {
+    int suclu=0,n,arr[100005],polis=0,i,s=0;
+    cin>>n;
+    for(i=0;i<n;i++)
+    cin>>arr[i];
+    for(i=n-1;i>-1;i--)
+    {
+        if(arr[i]>0)
+        n--;
+        else
+        break;
+    }
+    i=0;
+    for(int j=0;j<n;j++)
+    {
+        if(arr[j]<0)
+        {
+            suclu++;
+            i++;
+        }
+        else
+        break;
+    }
+    for(i;i<n;i++)
+    {
+        if(arr[i]>0)
+        polis+=arr[i];
+        else
+        s+=arr[i];
+    }
+    if(polis>=-1*s)
+    cout<<suclu;
+    else
+    cout<<-1*s-polis+suclu;
+    return 0;
+}
