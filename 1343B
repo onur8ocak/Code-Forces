@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+using namespace std;
+#define INF 1000005
+int main() {
+    int t,n,arr[INF],say=2,s=1,sum1,sum2;
+    cin>>t;
+    while(t--)
+    {
+        sum1=0;
+        sum2=0;
+        say=2;
+        s=1;
+        cin>>n;
+        if(n%4!=0)
+        {
+            cout<<"NO"<<endl;
+            continue;
+        }
+        else
+        cout<<"YES"<<endl;
+        for(int i=0;i<n;i++)
+        {
+            if(i<n/2)
+            {
+                cout<<say<<" ";
+                sum1+=say;
+                say+=2;
+            }
+            else if(i!=n-1&&i>=n/2)
+            {
+                cout<<s<<" ";
+                sum2+=s;
+                s+=2;
+            }
+            else
+            cout<<sum1-sum2<<endl;
+        }
+    }
+    return 0;
+}
